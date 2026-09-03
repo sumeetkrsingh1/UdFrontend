@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #fffdf8;
+    --background-subtle: #faf7f2;
+    --foreground: #1c1917;
+    --card: #ffffff;
+    --card-foreground: #1c1917;
+    --card-subtle: #fcfbf9;
+    --border: #e7e5e4;
+    --border-subtle: #f5f2ed;
+    --border-hover: #d6d3d1;
+    --input: #ffffff;
+    
+    /* Warm Earthy Tones */
+    --terracotta: #c85a3b;
+    --terracotta-hover: #b34d30;
+    --terracotta-subtle: #fff4ed;
+    --terracotta-border: #fcd5c7;
+    
+    --marigold: #d97706;
+    --marigold-subtle: #fef3c7;
+    --marigold-border: #fde68a;
+    
+    --indigo-earth: #1e3a5f;
+    --indigo-subtle: #eef4fb;
+    --indigo-border: #c9ddf2;
+    
+    --sage-earth: #2d6a4f;
+    --sage-subtle: #e8f5ee;
+    --sage-border: #b7e0cb;
+    
+    --primary: #c85a3b;
+    --primary-hover: #b34d30;
+    --primary-foreground: #ffffff;
+    --primary-glow: rgba(200, 90, 59, 0.2);
+    
+    --secondary: #57534e;
+    --secondary-foreground: #ffffff;
+    --muted: #f5f2ed;
+    --muted-foreground: #78716c;
+    
+    --sidebar: #ffffff;
+    --sidebar-border: #e7e5e4;
+    
+    --radius-sm: 0.5rem;
+    --radius-md: 0.875rem;
+    --radius-lg: 1.25rem;
+    --radius-xl: 1.75rem;
+    --radius-full: 9999px;
+    
+    --shadow-subtle: 0 1px 3px 0 rgba(28, 25, 23, 0.04);
+    --shadow-card: 0 10px 30px -10px rgba(28, 25, 23, 0.05), 0 2px 6px -2px rgba(28, 25, 23, 0.02);
+    --shadow-hover: 0 20px 40px -15px rgba(200, 90, 59, 0.08), 0 4px 12px -2px rgba(28, 25, 23, 0.04);
+  }
+
+  .dark {
+    --background: #141210;
+    --background-subtle: #1c1917;
+    --foreground: #fafaf9;
+    --card: #1f1c19;
+    --card-foreground: #fafaf9;
+    --card-subtle: #292524;
+    --border: #383430;
+    --border-subtle: #2c2825;
+    --border-hover: #4e4844;
+    --input: #1f1c19;
+    
+    --primary: #e07a5f;
+    --primary-hover: #c85a3b;
+    --primary-foreground: #ffffff;
+    --primary-glow: rgba(224, 122, 95, 0.25);
+    
+    --sidebar: #171513;
+    --sidebar-border: #383430;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'DM Sans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif, .font-editorial {
+  font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'DM Sans', 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: 'Geist Mono', monospace;
+}
+
+/* Custom Warm Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* ==========================================================================
+   WARM & EARTHY HUMAN-CENTRIC DESIGN TOKENS
+   ========================================================================== */
+
+.warm-bg-canvas {
+  background-color: #fffdf8;
+  color: #1c1917;
+}
+
+.warm-paper-texture {
+  background-image: radial-gradient(at 15% 15%, rgba(200, 90, 59, 0.03) 0px, transparent 40%),
+                    radial-gradient(at 85% 20%, rgba(217, 119, 6, 0.03) 0px, transparent 45%),
+                    radial-gradient(at 50% 80%, rgba(30, 58, 95, 0.02) 0px, transparent 50%);
+}
+
+.warm-card {
+  background-color: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.04), 0 2px 6px -1px rgba(28, 25, 23, 0.02);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.warm-card:hover {
+  border-color: #d6d3d1;
+  box-shadow: 0 14px 32px -6px rgba(28, 25, 23, 0.08), 0 4px 10px -2px rgba(28, 25, 23, 0.03);
+  transform: translateY(-2px);
+}
+
+.warm-btn-terracotta {
+  background-color: #c85a3b;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 4px 14px 0 rgba(200, 90, 59, 0.22);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.warm-btn-terracotta:hover {
+  background-color: #b34d30;
+  box-shadow: 0 6px 20px 0 rgba(200, 90, 59, 0.32);
+  transform: translateY(-1px);
+}
+.warm-btn-terracotta:active {
+  transform: scale(0.98);
+}
+
+.warm-btn-indigo {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  box-shadow: 0 4px 14px 0 rgba(30, 58, 95, 0.20);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.warm-btn-indigo:hover {
+  background-color: #152b47;
+  box-shadow: 0 6px 20px 0 rgba(30, 58, 95, 0.28);
+  transform: translateY(-1px);
+}
+
+.warm-pill-terracotta {
+  background-color: #fff4ed;
+  color: #c85a3b;
+  border: 1px solid #fcd5c7;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.warm-pill-marigold {
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.warm-pill-sage {
+  background-color: #e8f5ee;
+  color: #2d6a4f;
+  border: 1px solid #b7e0cb;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.warm-pill-indigo {
+  background-color: #eef4fb;
+  color: #1e3a5f;
+  border: 1px solid #c9ddf2;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.warm-card-featured {
+  background-color: #ffffff;
+  border: 2px solid #c85a3b;
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 40px -10px rgba(200, 90, 59, 0.12), 0 4px 12px -2px rgba(28, 25, 23, 0.04);
+}
+
+
