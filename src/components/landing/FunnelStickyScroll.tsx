@@ -49,7 +49,7 @@ export function FunnelStickyScroll() {
 
         {/* Quick Stage Tab Switcher */}
         <div className="flex items-center justify-center gap-2 overflow-x-auto pb-4 mb-10 no-scrollbar">
-          {FUNNEL_STEPS.map((step, idx) => {
+          {FUNNEL_STEPS.map((step: any, idx: number) => {
             const isActive = activeStepIndex === idx;
             return (
               <button
@@ -76,13 +76,13 @@ export function FunnelStickyScroll() {
             <FunnelStageGraphic
               activeStep={activeStep}
               activeStepIndex={activeStepIndex}
-              onSelectStep={(idx) => setActiveStepIndex(idx)}
+              onSelectStep={(idx: number) => setActiveStepIndex(idx)}
             />
           </div>
 
           {/* Right Column: Step Cards */}
           <div className="lg:col-span-7 space-y-6">
-            {FUNNEL_STEPS.map((step, idx) => {
+            {FUNNEL_STEPS.map((step: any, idx: number) => {
               const isSelected = activeStepIndex === idx;
               return (
                 <div
@@ -128,7 +128,7 @@ export function FunnelStickyScroll() {
 
                   {/* Bullets Chunked List */}
                   <div className="space-y-3 pt-4 border-t border-stone-100">
-                    {step.bullets.map((bullet, bIdx) => (
+                    {step.bullets.map((bullet: any, bIdx: number) => (
                       <div key={bIdx} className="flex items-start gap-3">
                         <div className="w-5 h-5 rounded-md bg-[#e8f5ee] text-[#2d6a4f] flex items-center justify-center flex-shrink-0 mt-0.5">
                           <CheckCircle2 className="w-3.5 h-3.5" />

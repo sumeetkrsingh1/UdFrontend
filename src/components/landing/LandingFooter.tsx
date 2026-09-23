@@ -2,82 +2,111 @@
 
 import React from "react";
 import Link from "next/link";
-import { Cloud, ShieldCheck } from "lucide-react";
+import { Cloud, ShieldCheck, Zap, Heart } from "lucide-react";
 
 export function LandingFooter() {
   return (
-    <footer className="border-t border-stone-200 bg-[#faf7f2] py-12 md:py-16 text-stone-600 text-xs">
+    <footer className="border-t border-[#CCD5DF] bg-[#F9F9FB] py-16 text-stone-600 text-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          {/* Brand Col */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
+          {/* Brand Col (2 cols on md) */}
           <div className="md:col-span-2 flex flex-col items-start gap-4">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-[#c85a3b] via-[#d97706] to-[#1e3a5f] flex items-center justify-center text-white shadow-xs">
-                <Cloud className="w-4 h-4 fill-current" />
+              <div className="w-9 h-9 rounded-2xl bg-[#001AD3] flex items-center justify-center text-white shadow-md">
+                <Cloud className="w-5 h-5 fill-current" />
               </div>
-              <span className="font-serif font-bold text-lg tracking-tight text-stone-900">
-                Audience<span className="text-[#c85a3b]">OS</span>
+              <span className="font-extrabold text-xl tracking-tight text-stone-900">
+                Audience<span className="text-[#001AD3]">OS</span>
               </span>
             </Link>
-            <p className="text-stone-600 max-w-sm leading-relaxed">
-              The warm, human-centric LinkedIn growth and inbound advisory engine. Borrow organic reach from top creator conversations and convert warm decision-makers into clients on autopilot.
+            <p className="text-stone-600 max-w-sm leading-relaxed text-xs">
+              The human-first LinkedIn authority and inbound advisory revenue engine. Borrow reach from top creator conversations and turn warm decision-makers into signed clients on autopilot.
             </p>
 
             {/* System Status Pill */}
-            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-stone-200 text-[11px] text-stone-700 shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-[#2d6a4f]" />
-              <span>All Cloud Emulation Engines Operational</span>
+            <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#CCD5DF] text-[11px] text-stone-700 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>All 15 Cloud Emulation Clusters Active (Dedicated Residential IP)</span>
             </div>
           </div>
 
-          {/* Navigation Links */}
+          {/* Product Links */}
           <div className="flex flex-col gap-2.5">
-            <span className="font-bold uppercase tracking-wider text-stone-900 text-[11px]">
-              Funnel Architecture
+            <span className="font-extrabold uppercase tracking-wider text-[#1C1C1C] text-[11px]">
+              Platform & Features
             </span>
-            <a href="#problem" className="hover:text-[#c85a3b] transition-colors">
-              The Problem Space
+            <Link href="/today" className="hover:text-[#001AD3] transition-colors">
+              Today Action Cockpit
+            </Link>
+            <Link href="/comment" className="hover:text-[#001AD3] transition-colors">
+              Borrowed Reach Feed
+            </Link>
+            <Link href="/messages" className="hover:text-[#001AD3] transition-colors">
+              Conversational CRM
+            </Link>
+            <Link href="/settings" className="hover:text-[#001AD3] transition-colors">
+              Cloud Proxy Settings
+            </Link>
+            <a href="#comparison" className="hover:text-[#001AD3] transition-colors">
+              Feature Comparison
             </a>
-            <a href="#funnel" className="hover:text-[#c85a3b] transition-colors">
-              The 4-Step Blueprint
+          </div>
+
+          {/* Funnel & Use Cases */}
+          <div className="flex flex-col gap-2.5">
+            <span className="font-extrabold uppercase tracking-wider text-[#1C1C1C] text-[11px]">
+              Solutions & Use Cases
+            </span>
+            <a href="#problem" className="hover:text-[#001AD3] transition-colors">
+              For Solo Consultants
             </a>
-            <a href="#metrics" className="hover:text-[#c85a3b] transition-colors">
-              Founder Case Studies
+            <a href="#problem" className="hover:text-[#001AD3] transition-colors">
+              For Growth Agencies
             </a>
-            <a href="#pricing" className="hover:text-[#c85a3b] transition-colors">
+            <a href="#problem" className="hover:text-[#001AD3] transition-colors">
+              For Executive Recruiters
+            </a>
+            <a href="#funnel" className="hover:text-[#001AD3] transition-colors">
+              The 3-Step Inbound Blueprint
+            </a>
+            <a href="#pricing" className="hover:text-[#001AD3] transition-colors">
               Pricing Plans
             </a>
           </div>
 
-          {/* Legal & App Links */}
+          {/* Resources & Support */}
           <div className="flex flex-col gap-2.5">
-            <span className="font-bold uppercase tracking-wider text-stone-900 text-[11px]">
-              Platform & Access
+            <span className="font-extrabold uppercase tracking-wider text-[#1C1C1C] text-[11px]">
+              Resources & Trust
             </span>
-            <Link href="/today" className="hover:text-[#c85a3b] transition-colors">
-              Today Action Cockpit
-            </Link>
-            <Link href="/comment" className="hover:text-[#c85a3b] transition-colors">
-              Borrowed Reach Feed
-            </Link>
-            <Link href="/messages" className="hover:text-[#c85a3b] transition-colors">
-              Conversational CRM
-            </Link>
-            <a href="#faq" className="hover:text-[#c85a3b] transition-colors">
-              Safety & Compliance FAQ
+            <a href="#faq" className="hover:text-[#001AD3] transition-colors">
+              Frequently Asked Questions
             </a>
+            <a href="#testimonials" className="hover:text-[#001AD3] transition-colors">
+              Customer Success Stories
+            </a>
+            <span className="text-stone-400 cursor-not-allowed">
+              The 2026 Inbound Report
+            </span>
+            <span className="text-stone-400 cursor-not-allowed">
+              Security Architecture Docs
+            </span>
+            <span className="text-stone-400 cursor-not-allowed">
+              Slack Community
+            </span>
           </div>
         </div>
 
         {/* Bottom Strip */}
-        <div className="pt-8 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+        <div className="pt-8 border-t border-[#CCD5DF] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
           <div>
-            &copy; {new Date().getFullYear()} Audience OS Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Audience OS Inc. All rights reserved. Built with Expandi Universal Design.
           </div>
           <div className="flex items-center gap-6">
             <span className="hover:text-stone-800 cursor-pointer">Privacy Policy</span>
             <span className="hover:text-stone-800 cursor-pointer">Terms of Service</span>
             <span className="hover:text-stone-800 cursor-pointer">Security Whitepaper</span>
+            <span className="hover:text-stone-800 cursor-pointer">Status</span>
           </div>
         </div>
       </div>
