@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mastreach Assistant - Write with your knowledge",
+  title: "Mastreach - Write with your knowledge",
   description:
-    "Write thoughtful LinkedIn comments and save valuable articles across the web with Mastreach Assistant.",
+    "Write thoughtful LinkedIn comments and save valuable articles across the web with Mastreach.",
 };
 
 export default function RootLayout({

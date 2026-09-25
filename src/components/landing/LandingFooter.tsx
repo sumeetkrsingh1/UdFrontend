@@ -22,13 +22,12 @@ export function LandingFooter() {
               </span>
             </Link>
             <p className="text-stone-600 max-w-sm leading-relaxed text-xs">
-              Thoughtful LinkedIn comments and saved articles, grounded in your knowledge base and always under your control.
+              A connected intelligence layer for your LinkedIn activity. Watch what matters, write thoughtfully, capture useful knowledge, and understand what works.
             </p>
 
-            {/* System Status Pill */}
             <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#CCD5DF] text-[11px] text-stone-700 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>All 15 Cloud Emulation Clusters Active (Dedicated Residential IP)</span>
+              <span>Watch · Create · Capture · Measure</span>
             </div>
           </div>
 
@@ -38,20 +37,23 @@ export function LandingFooter() {
               Platform & Features
             </span>
             <Link href="/today" className="hover:text-[#001AD3] transition-colors">
-              LinkedIn Comment Assistant
+              Watcher
             </Link>
             <Link href="/comment" className="hover:text-[#001AD3] transition-colors">
-              Save Page
+              Comment Assistant
             </Link>
-            <Link href="/messages" className="hover:text-[#001AD3] transition-colors">
-              Knowledge Base
+            <Link href="/knowledge" className="hover:text-[#001AD3] transition-colors">
+              Knowledge
             </Link>
-            <Link href="/settings" className="hover:text-[#001AD3] transition-colors">
-              Extension Settings
+            <Link href="/content" className="hover:text-[#001AD3] transition-colors">
+              Content & Scheduling
             </Link>
-            <a href="#comparison" className="hover:text-[#001AD3] transition-colors">
-              Feature Comparison
-            </a>
+            <Link href="/today" className="hover:text-[#001AD3] transition-colors">
+              Engagement Intelligence
+            </Link>
+            <Link href="/#pricing" className="hover:text-[#001AD3] transition-colors">
+              Pricing
+            </Link>
           </div>
 
           {/* Funnel & Use Cases */}
@@ -59,39 +61,45 @@ export function LandingFooter() {
             <span className="font-extrabold uppercase tracking-wider text-[#1C1C1C] text-[11px]">
               Solutions & Use Cases
             </span>
-            <a href="#problem" className="hover:text-[#001AD3] transition-colors">
+            <Link href="/comment" className="hover:text-[#001AD3] transition-colors">
               For LinkedIn Writers
-            </a>
-            <a href="#problem" className="hover:text-[#001AD3] transition-colors">
-              For Curious Readers
-            </a>
-            <a href="#problem" className="hover:text-[#001AD3] transition-colors">
+            </Link>
+            <Link href="/knowledge" className="hover:text-[#001AD3] transition-colors">
               For Knowledge Builders
-            </a>
-            <a href="#funnel" className="hover:text-[#001AD3] transition-colors">
+            </Link>
+            <Link href="/content" className="hover:text-[#001AD3] transition-colors">
+              For Content Creators
+            </Link>
+            <Link href="/#funnel" className="hover:text-[#001AD3] transition-colors">
               How Mastreach Works
-            </a>
-            <a href="#pricing" className="hover:text-[#001AD3] transition-colors">
-              Pricing Plans
-            </a>
+            </Link>
+            <Link href="/#faq" className="hover:text-[#001AD3] transition-colors">
+              Mastreach Ecosystem
+            </Link>
+            <Link href="/#funnel" className="hover:text-[#001AD3] transition-colors">
+              Use Cases
+            </Link>
           </div>
 
           {/* Resources & Support */}
           <div className="flex flex-col gap-2.5">
             <span className="font-extrabold uppercase tracking-wider text-[#1C1C1C] text-[11px]">
-              Resources & Trust
+              Resources
             </span>
-            <a href="#faq" className="hover:text-[#001AD3] transition-colors">
+            <Link href="/#faq" className="hover:text-[#001AD3] transition-colors">
               Frequently Asked Questions
-            </a>
-            <a href="#testimonials" className="hover:text-[#001AD3] transition-colors">
-              Customer Success Stories
-            </a>
+            </Link>
             <span className="text-stone-400 cursor-not-allowed">
               Mastreach Guide
             </span>
             <span className="text-stone-400 cursor-not-allowed">
-              Account Token Help
+              Product Documentation
+            </span>
+            <span className="text-stone-400 cursor-not-allowed">
+              Privacy
+            </span>
+            <span className="text-stone-400 cursor-not-allowed">
+              Terms
             </span>
             <span className="text-stone-400 cursor-not-allowed">
               Support
@@ -105,10 +113,8 @@ export function LandingFooter() {
             &copy; {new Date().getFullYear()} Mastreach. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <span className="hover:text-stone-800 cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-stone-800 cursor-pointer">Terms of Service</span>
-            <span className="hover:text-stone-800 cursor-pointer">Security Whitepaper</span>
-            <span className="hover:text-stone-800 cursor-pointer">Status</span>
+            <span className="text-stone-400 cursor-not-allowed">Privacy Policy</span>
+            <span className="text-stone-400 cursor-not-allowed">Terms of Service</span>
           </div>
         </div>
       </div>

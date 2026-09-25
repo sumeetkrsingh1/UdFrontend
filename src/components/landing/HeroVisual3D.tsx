@@ -132,7 +132,7 @@ export function HeroVisual3D() {
           </div>
 
           <span className="font-serif font-bold text-stone-900 text-sm">
-            Mastreach Assistant
+            Mastreach
           </span>
           <span className="text-[11px] text-[#c85a3b] font-medium flex items-center gap-1 mt-0.5">
             <span className="w-2 h-2 rounded-full bg-[#c85a3b] animate-ping inline-block" />

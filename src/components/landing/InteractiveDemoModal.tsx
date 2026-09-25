@@ -164,7 +164,7 @@ export function InteractiveDemoModal({ isOpen, onClose }: InteractiveDemoModalPr
           href="/today"
           className="warm-btn-terracotta w-full py-4 rounded-2xl text-xs sm:text-sm font-bold text-white transition-all flex items-center justify-center gap-2 group cursor-pointer"
         >
-          <span>Open Mastreach Assistant</span>
+          <span>Open Mastreach</span>
           <ArrowRight className="w-4 h-4" />
         </a>
       </div>

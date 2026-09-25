@@ -110,7 +110,7 @@ export default function KnowledgePage() {
             className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-xs font-semibold shadow-lg shadow-blue-500/25 flex items-center gap-2 self-start md:self-auto transition-all"
           >
             <Bot className="w-4 h-4" />
-            <span>{chatOpen ? "Hide AI Assistant" : "Ask Knowledge Base"}</span>
+            <span>{chatOpen ? "Hide AI" : "Ask Knowledge Base"}</span>
           </button>
         </div>
 

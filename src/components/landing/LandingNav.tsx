@@ -29,9 +29,6 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
         <div className="relative bg-gradient-to-r from-[#193149] to-[#3C75AF] text-white text-xs sm:text-sm py-2 px-4 shadow-sm">
           <div className="max-w-7xl mx-auto flex items-center justify-between pr-8">
             <div className="flex items-center gap-2 mx-auto text-center font-medium">
-              <span className="hidden md:inline font-bold bg-white/20 px-2 py-0.5 rounded text-[11px] uppercase tracking-wider">
-                Benchmark Report
-              </span>
               <span>{HERO_DATA.announcementText}</span>
               <a
                 href={HERO_DATA.announcementLinkUrl}
@@ -80,14 +77,9 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
                 alt=""
                 className="w-9 h-9 rounded-xl shadow-md group-hover:shadow-lg transition-all"
               />
-              <div className="flex flex-col">
-                <span className="text-xl font-extrabold tracking-tight text-[#1C1C1C] flex items-center gap-1 font-heading">
-                  Mastreach
-                </span>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-[#728095] -mt-1">
-                  Assistant
-                </span>
-              </div>
+              <span className="text-xl font-extrabold tracking-tight text-[#1C1C1C] flex items-center gap-1 font-heading">
+                Mastreach
+              </span>
             </Link>
 
             {/* Desktop Navigation Links */}
@@ -116,75 +108,104 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
                 </button>
 
                 {activeDropdown === "product" && (
-                  <div className="absolute top-full left-0 w-[580px] bg-white rounded-xl shadow-xl border border-slate-100 p-4 grid grid-cols-2 gap-3 animate-in fade-in slide-in-from-top-2 duration-150">
-                    <div className="bg-[#FCF8F5] rounded-lg p-4 flex flex-col justify-between border border-orange-100">
+                  <div className="absolute top-full left-0 w-[680px] bg-white rounded-xl shadow-xl border border-slate-100 p-4 grid grid-cols-2 gap-3 animate-in fade-in slide-in-from-top-2 duration-150">
+                    <div className="bg-[#E0F3FB] rounded-lg p-4 flex flex-col justify-between border border-[#B0E1F4]">
                       <div>
-                        <span className="text-[11px] font-bold uppercase tracking-wider text-[#FF6030] bg-[#FAEAE8] px-2 py-0.5 rounded">
-                          New Release
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-[#001AD3] bg-white/70 px-2 py-0.5 rounded">
+                          Mastreach Ecosystem
                         </span>
                         <h4 className="font-bold text-[#1C1C1C] mt-2 text-sm font-heading">
-                          Multi-Profile Workspaces
+                          Everything connected to your LinkedIn workflow
                         </h4>
                         <p className="text-xs text-[#4B5567] mt-1 leading-relaxed">
-                          Write thoughtful LinkedIn comments and save useful pages into your knowledge base.
+                          Watch activity, write thoughtful responses, capture useful knowledge, create content, and understand what works — all through Mastreach.
                         </p>
                       </div>
                       <Link
-                        href="#features"
+                        href="/"
                         className="text-xs font-bold text-[#001AD3] hover:underline mt-3 inline-flex items-center gap-1"
                       >
-                        Explore Workspaces →
+                        Explore Mastreach →
                       </Link>
                     </div>
 
                     <div className="flex flex-col gap-2">
                       <Link
-                        href="#bento"
+                        href="/today"
                         className="p-2.5 rounded-lg hover:bg-slate-50 transition-colors flex items-start gap-3 group"
                       >
                         <div className="w-8 h-8 rounded-lg bg-[#E0F3FB] text-[#001AD3] flex items-center justify-center shrink-0">
-                          ⚡
+                          👁️
                         </div>
                         <div>
                           <div className="text-xs font-bold text-[#1C1C1C] group-hover:text-[#001AD3]">
-                            Borrowed Reach Feed
+                            Watcher
                           </div>
                           <div className="text-[11px] text-[#728095]">
-                            Engage top 1% creator feeds in the golden 15m window
+                            See relevant LinkedIn activity as it happens
+                          </div>
+                          <div className="mt-0.5 text-[10px] leading-relaxed text-[#728095]">
+                            Posts, comments, replies, messages, and engagement activity brought into Mastreach.
                           </div>
                         </div>
                       </Link>
 
                       <Link
-                        href="#comparison"
+                        href="/comment"
                         className="p-2.5 rounded-lg hover:bg-slate-50 transition-colors flex items-start gap-3 group"
                       >
                         <div className="w-8 h-8 rounded-lg bg-[#FFF480] text-[#1C1C1C] flex items-center justify-center shrink-0">
-                          🛡️
+                          ✍️
                         </div>
                         <div>
                           <div className="text-xs font-bold text-[#1C1C1C] group-hover:text-[#001AD3]">
-                            Safety Architecture
+                            Comment Assistant
                           </div>
                           <div className="text-[11px] text-[#728095]">
-                            Dedicated residential proxies with zero account risk
+                            Write thoughtful responses in your voice
+                          </div>
+                          <div className="mt-0.5 text-[10px] leading-relaxed text-[#728095]">
+                            Analyze the current LinkedIn post, choose your intent, and create a response you can review before inserting.
                           </div>
                         </div>
                       </Link>
 
                       <Link
-                        href="#two-direction"
+                        href="/knowledge"
                         className="p-2.5 rounded-lg hover:bg-slate-50 transition-colors flex items-start gap-3 group"
                       >
                         <div className="w-8 h-8 rounded-lg bg-[#D2C5FA] text-[#4B2896] flex items-center justify-center shrink-0">
-                          📥
+                          🧠
                         </div>
                         <div>
                           <div className="text-xs font-bold text-[#1C1C1C] group-hover:text-[#001AD3]">
-                            Global Smart Inbox
+                            Knowledge
                           </div>
                           <div className="text-[11px] text-[#728095]">
-                            Consolidate inbound lead replies with intent tags
+                            Capture useful information from across the web
+                          </div>
+                          <div className="mt-0.5 text-[10px] leading-relaxed text-[#728095]">
+                            Save LinkedIn posts, articles, web pages, and YouTube videos with notes and tags.
+                          </div>
+                        </div>
+                      </Link>
+
+                      <Link
+                        href="/today"
+                        className="p-2.5 rounded-lg hover:bg-slate-50 transition-colors flex items-start gap-3 group"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-[#FECEBF] text-[#9A2E12] flex items-center justify-center shrink-0">
+                          📊
+                        </div>
+                        <div>
+                          <div className="text-xs font-bold text-[#1C1C1C] group-hover:text-[#001AD3]">
+                            Engagement Intelligence
+                          </div>
+                          <div className="text-[11px] text-[#728095]">
+                            Understand what works
+                          </div>
+                          <div className="mt-0.5 text-[10px] leading-relaxed text-[#728095]">
+                            Track comments, posts, and engagement patterns to learn from your LinkedIn activity.
                           </div>
                         </div>
                       </Link>
@@ -240,14 +261,14 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
               onClick={onOpenDemo}
               className="expandi-btn-outline text-xs sm:text-sm py-2 px-4"
             >
-              Talk to an expert
+              See How It Works
             </button>
 
             <Link
               href="/settings"
               className="expandi-btn-primary text-xs sm:text-sm py-2 px-5"
             >
-              Start Free Trial
+              Get Started
             </Link>
           </div>
 
@@ -314,14 +335,14 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
                 }}
                 className="w-full expandi-btn-outline text-sm py-2.5 text-center justify-center"
               >
-                Talk to an expert
+                See How It Works
               </button>
               <Link
                 href="/settings"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full expandi-btn-primary text-sm py-2.5 text-center justify-center"
               >
-                Start Free Trial
+                Get Started
               </Link>
             </div>
           </div>

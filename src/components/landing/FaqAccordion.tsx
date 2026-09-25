@@ -30,14 +30,11 @@ export function FaqAccordion() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1C1C1C] tracking-tight leading-tight mb-3">
-            Got Questions?{" "}
-            <mark className="bg-[#FFF480] text-[#001AD3] px-2 py-0.5 rounded-md inline-block">
-              We Have Answers.
-            </mark>
+            Got questions? We have answers.
           </h2>
 
           <p className="text-stone-600 text-sm sm:text-base max-w-xl">
-            Clear, honest details on profile safety architecture, authentic human-first AI, and pipeline conversion ROI.
+            Clear answers about how Mastreach watches LinkedIn activity, helps you write thoughtfully, captures knowledge, and turns engagement into useful insights.
           </p>
         </div>
 
@@ -98,14 +95,14 @@ export function FaqAccordion() {
             </div>
             <div>
               <h4 className="text-sm font-bold text-stone-900">Still have a question?</h4>
-              <p className="text-xs text-stone-600">Our growth advisors reply in under 3 minutes.</p>
+              <p className="text-xs text-stone-600">Explore Mastreach or get in touch if you need help understanding a feature.</p>
             </div>
           </div>
           <a
             href="/today"
             className="px-6 py-2.5 rounded-full bg-[#001AD3] hover:bg-[#0015A8] text-white text-xs font-bold transition-all shadow-xs flex-shrink-0 cursor-pointer"
           >
-            Chat with Support
+            Explore Mastreach →
           </a>
         </div>
       </div>

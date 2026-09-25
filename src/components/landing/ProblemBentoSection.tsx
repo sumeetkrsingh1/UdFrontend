@@ -14,10 +14,10 @@ export const ProblemBentoSection: React.FC = () => {
             Built for thoughtful readers and writers
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1C1C1C] tracking-tight leading-[1.2] font-heading">
-            One assistant for <mark className="expandi-mark">LinkedIn and the web</mark>
+            One intelligent system for your LinkedIn activity
           </h2>
           <WhisperText
-            text="Write better replies on LinkedIn, then save the articles that matter directly into your knowledge base for future grounding."
+            text="Watch what matters, write thoughtful responses, capture valuable knowledge, and understand how your engagement performs — all connected in one place."
             className="mt-4 text-base sm:text-lg text-[#4B5567] leading-relaxed"
           />
         </div>

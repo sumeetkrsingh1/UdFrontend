@@ -27,17 +27,17 @@ export function FinalCtaSection({ onOpenDemo }: { onOpenDemo?: () => void }) {
           {/* Eyebrow Pill */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#FFF480] text-xs font-bold tracking-wide mb-6 shadow-xs">
             <Zap className="w-3.5 h-3.5 text-[#FFF480]" />
-            <span>YOUR CONTEXT, RIGHT WHERE YOU WRITE</span>
+            <span>YOUR LINKEDIN, FINALLY CONNECTED</span>
           </div>
 
           {/* Main Title */}
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12] mb-6 max-w-4xl mx-auto">
-            Ready to write with your knowledge base?{" "}
-            <span className="text-[#FFF480]">Mastreach Assistant is ready.</span>
+            Ready to turn your LinkedIn activity into{" "}
+            <span className="text-[#FFF480]">momentum?</span>
           </h2>
 
           <WhisperText
-            text="Draft thoughtful comments on LinkedIn and save valuable articles across the web. You review everything before it goes anywhere."
+            text="Watch what matters, write thoughtful responses, capture useful knowledge, create content, and understand what works — all connected through Mastreach."
             className="text-blue-100 text-sm sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10"
           />
 
@@ -47,7 +47,7 @@ export function FinalCtaSection({ onOpenDemo }: { onOpenDemo?: () => void }) {
               href="/today"
               className="w-full sm:w-auto px-9 py-4 rounded-full text-sm font-extrabold bg-[#FFF480] hover:bg-[#fffa9e] text-[#001AD3] transition-all flex items-center justify-center gap-2 shadow-lg hover:scale-105 cursor-pointer"
             >
-              <span>Get Mastreach Assistant</span>
+              <span>Get Started</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
@@ -66,11 +66,11 @@ export function FinalCtaSection({ onOpenDemo }: { onOpenDemo?: () => void }) {
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-blue-100">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-[#FFF480]" />
-              <span>7-Day Free Trial</span>
+              <span>LinkedIn activity in one place</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#21ABE1]" />
-              <span>Grounded in your knowledge base</span>
+              <span>Thoughtful responses in your voice</span>
             </div>
             <div className="flex items-center gap-2">
               <Lock className="w-4 h-4 text-[#FECEBF]" />
