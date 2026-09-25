@@ -46,7 +46,7 @@ export default function LandingPage() {
         {/* 7. Full-Width Royal Blue Counter Banner with Hairline Dividers */}
         <MetricsObsidianSection />
 
-        {/* 8. Feature Comparison Matrix Table (Audience OS vs Cold Spam Bots vs Manual) */}
+        {/* 8. Feature Comparison Matrix Table (Mastreach vs generic tools vs manual) */}
         <FeatureComparisonSection />
 
         {/* 9. Social Proof & Testimonials Showcase (G2 / Capterra Badges + Dual Slider) */}

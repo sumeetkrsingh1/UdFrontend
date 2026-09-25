@@ -28,7 +28,7 @@ export function CommunityBannerSection() {
             </h2>
 
             <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl">
-              Get immediate access to our exclusive Slack community, weekly comment teardown masterclasses, and verified $5k–$20k retainer closing playbooks.
+              Get practical guidance for writing thoughtful LinkedIn comments and building a knowledge base from the articles you read.
             </p>
 
             {/* Perks Badges */}
@@ -39,7 +39,7 @@ export function CommunityBannerSection() {
               </div>
               <div className="px-3.5 py-1.5 rounded-full bg-white text-stone-800 text-xs font-bold shadow-xs border border-white/60 flex items-center gap-2">
                 <Sparkles className="w-3.5 h-3.5 text-[#001AD3]" />
-                <span>500+ High-Signal Comment Templates</span>
+                <span>Context for every thoughtful comment</span>
               </div>
               <div className="px-3.5 py-1.5 rounded-full bg-white text-stone-800 text-xs font-bold shadow-xs border border-white/60 flex items-center gap-2">
                 <Award className="w-3.5 h-3.5 text-[#001AD3]" />

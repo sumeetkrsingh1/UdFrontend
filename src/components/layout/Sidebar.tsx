@@ -15,7 +15,6 @@ import {
   Sun,
   Moon,
   Monitor,
-  Cloud,
   ChevronDown,
   MoreHorizontal,
   Sparkles,
@@ -50,13 +49,15 @@ export function Sidebar() {
         {/* Brand Bar */}
         <div className="flex items-center justify-between">
           <Link href="/today" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-sky-400 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-              <Cloud className="w-5 h-5 fill-current" />
-            </div>
+            <img
+              src="/mastreach-app-icon.svg"
+              alt=""
+              className="w-9 h-9 rounded-2xl shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform"
+            />
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="font-serif text-lg tracking-tight text-[var(--foreground)] font-normal">
-                  Audience OS
+                  Mastreach
                 </span>
                 <span className="flex h-1.5 w-1.5 relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
@@ -64,7 +65,7 @@ export function Sidebar() {
                 </span>
               </div>
               <p className="text-[10px] text-[var(--muted-foreground)] tracking-wide font-sans">
-                from lead to paid
+                thoughtful context, everywhere
               </p>
             </div>
           </Link>

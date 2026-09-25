@@ -75,29 +75,17 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
           {/* Logo */}
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#001AD3] to-[#21ABE1] flex items-center justify-center text-white font-black text-lg shadow-md group-hover:shadow-lg transition-all">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-                  <path d="M9 12H4s.55-3.03 2-4.5c1.45-1.47 4.5-2 4.5-2" />
-                  <path d="M15 9V4s3.03.55 4.5 2c1.47 1.45 2 4.5 2 4.5" />
-                </svg>
-              </div>
+              <img
+                src="/mastreach-app-icon.svg"
+                alt=""
+                className="w-9 h-9 rounded-xl shadow-md group-hover:shadow-lg transition-all"
+              />
               <div className="flex flex-col">
                 <span className="text-xl font-extrabold tracking-tight text-[#1C1C1C] flex items-center gap-1 font-heading">
-                  Audience<span className="text-[#001AD3]">OS</span>
+                  Mastreach
                 </span>
                 <span className="text-[10px] uppercase font-bold tracking-widest text-[#728095] -mt-1">
-                  Inbound Revenue Engine
+                  Assistant
                 </span>
               </div>
             </Link>
@@ -138,7 +126,7 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
                           Multi-Profile Workspaces
                         </h4>
                         <p className="text-xs text-[#4B5567] mt-1 leading-relaxed">
-                          Enhance agency collaboration, deduplicate pitches, and streamline shared pipeline workflows.
+                          Write thoughtful LinkedIn comments and save useful pages into your knowledge base.
                         </p>
                       </div>
                       <Link

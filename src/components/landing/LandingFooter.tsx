@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Cloud, ShieldCheck, Zap, Heart } from "lucide-react";
+import { ShieldCheck, Zap, Heart } from "lucide-react";
 
 export function LandingFooter() {
   return (
@@ -12,15 +12,17 @@ export function LandingFooter() {
           {/* Brand Col (2 cols on md) */}
           <div className="md:col-span-2 flex flex-col items-start gap-4">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-9 h-9 rounded-2xl bg-[#001AD3] flex items-center justify-center text-white shadow-md">
-                <Cloud className="w-5 h-5 fill-current" />
-              </div>
+              <img
+                src="/mastreach-app-icon.svg"
+                alt=""
+                className="w-9 h-9 rounded-2xl shadow-md"
+              />
               <span className="font-extrabold text-xl tracking-tight text-stone-900">
-                Audience<span className="text-[#001AD3]">OS</span>
+                Mastreach
               </span>
             </Link>
             <p className="text-stone-600 max-w-sm leading-relaxed text-xs">
-              The human-first LinkedIn authority and inbound advisory revenue engine. Borrow reach from top creator conversations and turn warm decision-makers into signed clients on autopilot.
+              Thoughtful LinkedIn comments and saved articles, grounded in your knowledge base and always under your control.
             </p>
 
             {/* System Status Pill */}
@@ -36,16 +38,16 @@ export function LandingFooter() {
               Platform & Features
             </span>
             <Link href="/today" className="hover:text-[#001AD3] transition-colors">
-              Today Action Cockpit
+              LinkedIn Comment Assistant
             </Link>
             <Link href="/comment" className="hover:text-[#001AD3] transition-colors">
-              Borrowed Reach Feed
+              Save Page
             </Link>
             <Link href="/messages" className="hover:text-[#001AD3] transition-colors">
-              Conversational CRM
+              Knowledge Base
             </Link>
             <Link href="/settings" className="hover:text-[#001AD3] transition-colors">
-              Cloud Proxy Settings
+              Extension Settings
             </Link>
             <a href="#comparison" className="hover:text-[#001AD3] transition-colors">
               Feature Comparison
@@ -58,16 +60,16 @@ export function LandingFooter() {
               Solutions & Use Cases
             </span>
             <a href="#problem" className="hover:text-[#001AD3] transition-colors">
-              For Solo Consultants
+              For LinkedIn Writers
             </a>
             <a href="#problem" className="hover:text-[#001AD3] transition-colors">
-              For Growth Agencies
+              For Curious Readers
             </a>
             <a href="#problem" className="hover:text-[#001AD3] transition-colors">
-              For Executive Recruiters
+              For Knowledge Builders
             </a>
             <a href="#funnel" className="hover:text-[#001AD3] transition-colors">
-              The 3-Step Inbound Blueprint
+              How Mastreach Works
             </a>
             <a href="#pricing" className="hover:text-[#001AD3] transition-colors">
               Pricing Plans
@@ -86,13 +88,13 @@ export function LandingFooter() {
               Customer Success Stories
             </a>
             <span className="text-stone-400 cursor-not-allowed">
-              The 2026 Inbound Report
+              Mastreach Guide
             </span>
             <span className="text-stone-400 cursor-not-allowed">
-              Security Architecture Docs
+              Account Token Help
             </span>
             <span className="text-stone-400 cursor-not-allowed">
-              Slack Community
+              Support
             </span>
           </div>
         </div>
@@ -100,7 +102,7 @@ export function LandingFooter() {
         {/* Bottom Strip */}
         <div className="pt-8 border-t border-[#CCD5DF] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
           <div>
-            &copy; {new Date().getFullYear()} Audience OS Inc. All rights reserved. Built with Expandi Universal Design.
+            &copy; {new Date().getFullYear()} Mastreach. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <span className="hover:text-stone-800 cursor-pointer">Privacy Policy</span>

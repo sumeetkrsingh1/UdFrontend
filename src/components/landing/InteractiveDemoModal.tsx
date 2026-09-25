@@ -22,7 +22,7 @@ interface InteractiveDemoModalProps {
 const NICHES = [
   { id: "saas", name: "B2B SaaS & Tech", multiplier: 1.2, topVoice: "Jason Lemkin / SaaStr" },
   { id: "advisory", name: "CXO Coaching & Advisory", multiplier: 1.0, topVoice: "Justin Welsh" },
-  { id: "agency", name: "Growth & Performance Agency", multiplier: 1.3, topVoice: "Eric Siu" },
+  { id: "agency", name: "Research & Writing", multiplier: 1.3, topVoice: "Your knowledge base" },
   { id: "venture", name: "Venture Capital & Syndicate", multiplier: 1.1, topVoice: "Kunal Shah / Delta 4" },
 ];
 
@@ -131,10 +131,10 @@ export function InteractiveDemoModal({ isOpen, onClose }: InteractiveDemoModalPr
 
           <div className="p-2.5 rounded-xl bg-white border border-stone-200">
             <span className="text-[10px] text-stone-500 font-mono block">
-              Warm Inbound DMs
+              Saved context
             </span>
             <span className="text-sm sm:text-base font-bold text-[#c85a3b] mt-0.5 block">
-              {estimatedDMs}+ DMs
+              {estimatedDMs}+ notes
             </span>
           </div>
 
@@ -155,7 +155,7 @@ export function InteractiveDemoModal({ isOpen, onClose }: InteractiveDemoModalPr
             <span>AI COMMENT PERSPECTIVE FOR {selectedNiche.name.toUpperCase()}:</span>
           </div>
           <p className="text-xs text-stone-700 italic leading-relaxed">
-            &ldquo;Most founders assume scaling advisory requires aggressive cold outreach. In practice, 1 thoughtful teardown on a tier-1 post drove 48 inbound DMs with zero spam.&rdquo;
+            &ldquo;A thoughtful reply is easier when your own notes and saved articles are already close at hand.&rdquo;
           </p>
         </div>
 
@@ -164,7 +164,7 @@ export function InteractiveDemoModal({ isOpen, onClose }: InteractiveDemoModalPr
           href="/today"
           className="warm-btn-terracotta w-full py-4 rounded-2xl text-xs sm:text-sm font-bold text-white transition-all flex items-center justify-center gap-2 group cursor-pointer"
         >
-          <span>Claim This Pipeline in Audience OS</span>
+          <span>Open Mastreach Assistant</span>
           <ArrowRight className="w-4 h-4" />
         </a>
       </div>

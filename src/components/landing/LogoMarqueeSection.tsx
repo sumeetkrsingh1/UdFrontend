@@ -11,7 +11,7 @@ export const LogoMarqueeSection: React.FC = () => {
     <section className="w-full bg-[#21ABE1] py-6 overflow-hidden border-y border-[#008FCE]">
       <div className="max-w-7xl mx-auto px-4 mb-3 text-center">
         <p className="text-xs uppercase font-bold tracking-widest text-white/90">
-          Trusted by 15,000+ top operators, founders & advisory firms worldwide
+          Built for people who read, think, and write online
         </p>
       </div>
 

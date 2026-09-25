@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Mastreach app and browser extension icon</title>
+  <desc id="desc">A gradient M reaching a point on a dark rounded square.</desc>
+  <defs>
+    <linearGradient id="brand" x1="39" y1="49" x2="225" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB069"/>
+      <stop offset=".36" stop-color="#F478AA"/>
+      <stop offset=".68" stop-color="#653BD0"/>
+      <stop offset="1" stop-color="#2199ED"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="52" fill="#19223A"/>
+  <g fill="none" stroke="url(#brand)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M47 194V69L112 137L177 69V194"/>
+    <path d="M177 118L211 84"/>
+  </g>
+  <circle cx="220" cy="75" r="13" fill="#2199ED"/>
+</svg>

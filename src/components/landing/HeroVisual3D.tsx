@@ -87,7 +87,7 @@ const PROSPECTS: HumanProspect[] = [
     statusBg: "bg-[#eef4fb] border-[#c9ddf2]",
     avatarText: "AR",
     avatarBg: "bg-blue-100 text-blue-900 border border-blue-300",
-    snippet: "Pinned your comment to our top feed. Great insights on founder sales.",
+    snippet: "Saved this article to my knowledge base. Great insight.",
     x: 12,
     y: 78,
   },
@@ -132,7 +132,7 @@ export function HeroVisual3D() {
           </div>
 
           <span className="font-serif font-bold text-stone-900 text-sm">
-            Audience OS Engine
+            Mastreach Assistant
           </span>
           <span className="text-[11px] text-[#c85a3b] font-medium flex items-center gap-1 mt-0.5">
             <span className="w-2 h-2 rounded-full bg-[#c85a3b] animate-ping inline-block" />

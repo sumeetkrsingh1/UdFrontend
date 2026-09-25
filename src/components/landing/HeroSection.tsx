@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { HERO_DATA } from "@/lib/landingData";
+import { TextRotate } from "./TextRotate";
 
 interface HeroSectionProps {
   onOpenDemo?: () => void;
@@ -31,7 +32,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
 
         {/* Main Display Headline */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[4.25rem] font-extrabold text-[#1C1C1C] tracking-tight leading-[1.15] max-w-4xl mx-auto font-heading">
-          Get the <mark className="expandi-mark">{HERO_DATA.revenueMultiplier}</mark> with LinkedIn&apos;s #1 warm inbound funnel
+          {HERO_DATA.headlineMain}{" "}
+          <span className="inline-flex align-middle overflow-hidden rounded-[0.3em] bg-[#FF5A4D] px-[0.18em] py-[0.08em] text-white">
+            <TextRotate
+              texts={[
+                HERO_DATA.headlineHighlight,
+                "clarity",
+                "confidence",
+              ]}
+              className="min-w-[6ch] justify-center"
+            />
+          </span>
         </h1>
 
         {/* Subheadline */}
@@ -62,21 +73,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             <svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
-            7-Day Free Trial
+            Works on LinkedIn
           </span>
           <span>•</span>
           <span className="flex items-center gap-1">
             <svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
-            No Credit Card Required
+            Grounded in your knowledge
           </span>
           <span>•</span>
           <span className="flex items-center gap-1">
             <svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
-            100% Account Safety Guarantee
+            You approve every comment
           </span>
         </div>
 
@@ -107,10 +118,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
               <div className="lg:col-span-4 bg-white rounded-xl p-4 border border-slate-200/70 shadow-sm space-y-4">
                 <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                   <div className="font-bold text-xs uppercase tracking-wider text-[#1C1C1C]">
-                    🔥 Live Creator Feed
+                    🔥 LinkedIn Comment Assistant
                   </div>
                   <span className="text-[10px] bg-emerald-50 text-emerald-700 font-bold px-2 py-0.5 rounded-full">
-                    Active 15m Window
+                    Ready to draft
                   </span>
                 </div>
 
@@ -126,10 +137,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
                     </div>
                   </div>
                   <p className="text-[11px] text-[#4B5567] line-clamp-2">
-                    &quot;Most outbound DMs fail because founders pitch before demonstrating category authority...&quot;
+                    &quot;A useful comment starts with the context you already know...&quot;
                   </p>
                   <div className="text-[10px] font-bold text-[#001AD3] flex items-center gap-1">
-                    <span>✨ High-Signal Comment Drafted</span>
+                    <span>✨ Mastreach draft ready</span>
                   </div>
                 </div>
 
@@ -145,7 +156,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
                     </div>
                   </div>
                   <p className="text-[11px] text-[#4B5567] line-clamp-2">
-                    &quot;We just signed our 3rd $15k retainer without sending a single cold pitch email...&quot;
+                    &quot;Save this article to my knowledge base so I can use it later...&quot;
                   </p>
                 </div>
               </div>
@@ -156,14 +167,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
                   <div className="flex items-center justify-between border-b border-slate-100 pb-3">
                     <div>
                       <span className="text-[10px] font-bold uppercase tracking-wider text-[#001AD3] bg-[#E0F3FB] px-2 py-0.5 rounded">
-                        Synthesized Operator Perspective
+                        Mastreach Assistant
                       </span>
                       <h3 className="font-bold text-sm text-[#1C1C1C] mt-1 font-heading">
-                        Contrarian Peer Commentary #284
+                        Thoughtful comment draft
                       </h3>
                     </div>
                     <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">
-                      Top Comment Rank: #1 (94.8% Confidence)
+                      Grounded in your context
                     </span>
                   </div>
 

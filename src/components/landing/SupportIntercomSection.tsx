@@ -34,7 +34,7 @@ export function SupportIntercomSection() {
               </h2>
 
               <p className="text-blue-100 text-sm sm:text-base leading-relaxed mb-8 max-w-xl">
-                Have questions about fine-tuning your comment tone, setting up multi-client workspaces, or optimizing your conversion funnel? Our inbound team is always one click away.
+                Have questions about comment tone, Save Page, account tokens, or using your knowledge base? Our support team is one click away.
               </p>
 
               {/* 4 Feature Badges */}
@@ -105,7 +105,7 @@ export function SupportIntercomSection() {
                       <span className="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 border-2 border-white" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-black text-stone-900">Audience OS Support</h4>
+                      <h4 className="text-xs font-black text-stone-900">Mastreach Support</h4>
                       <p className="text-[10px] text-emerald-600 font-bold">Online • Replies in ~2m</p>
                     </div>
                   </div>
@@ -125,7 +125,7 @@ export function SupportIntercomSection() {
 
                   <div className="bg-stone-100 text-stone-800 p-3 rounded-2xl rounded-tr-xs ml-auto max-w-[85%]">
                     <p className="text-[11px]">
-                      Yes please! We focus on B2B FinTech founders and want our tone to be analytical yet conversational.
+                      Yes please! I want my comments to be analytical yet conversational.
                     </p>
                     <span className="text-[9px] text-stone-400 block text-right mt-1">10:43 AM</span>
                   </div>

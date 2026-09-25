@@ -92,7 +92,7 @@ export default function TodayPage() {
             </h1>
 
             <p className="text-xs sm:text-sm text-[var(--muted-foreground)] leading-relaxed max-w-2xl">
-              Audience OS runs your entire LinkedIn operations: rising post detection, grounded voice drafting, lead stage CRM, and reach telemetry. One platform, zero guesswork.
+              Mastreach helps you write thoughtful LinkedIn comments and keep useful web articles in your knowledge base. One place for context, zero guesswork.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2">

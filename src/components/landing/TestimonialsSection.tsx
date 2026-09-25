@@ -20,11 +20,11 @@ export const TestimonialsSection: React.FC = () => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1C1C1C] tracking-tight leading-[1.2] font-heading">
-              People like you use Audience OS to generate leads and <mark className="expandi-mark">grow faster</mark>
+              People like you use Mastreach to capture context and <mark className="expandi-mark">write with confidence</mark>
             </h2>
 
             <p className="text-base text-[#4B5567] leading-relaxed">
-              Join thousands of founders and agencies who transformed their LinkedIn from a cold pitch wasteland into a high-ticket consultation pipeline.
+              Keep the useful things you read close, and bring that context into the comments you write on LinkedIn.
             </p>
 
             {/* Trust Badges Grid (G2 & Capterra style) */}

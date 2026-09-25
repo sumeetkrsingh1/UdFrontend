@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowRight, Sparkles, Zap, ShieldCheck, CheckCircle2, Lock } from "lucide-react";
+import { WhisperText } from "./WhisperText";
 
 export function FinalCtaSection({ onOpenDemo }: { onOpenDemo?: () => void }) {
   return (
@@ -26,18 +27,19 @@ export function FinalCtaSection({ onOpenDemo }: { onOpenDemo?: () => void }) {
           {/* Eyebrow Pill */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#FFF480] text-xs font-bold tracking-wide mb-6 shadow-xs">
             <Zap className="w-3.5 h-3.5 text-[#FFF480]" />
-            <span>DEPLOY YOUR ENGINE IN 15 MINUTES</span>
+            <span>YOUR CONTEXT, RIGHT WHERE YOU WRITE</span>
           </div>
 
           {/* Main Title */}
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12] mb-6 max-w-4xl mx-auto">
-            Ready to Turn LinkedIn into Your #1{" "}
-            <span className="text-[#FFF480]">Predictable Revenue Funnel?</span>
+            Ready to write with your knowledge base?{" "}
+            <span className="text-[#FFF480]">Mastreach Assistant is ready.</span>
           </h2>
 
-          <p className="text-blue-100 text-sm sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-            Stop letting qualified high-ticket clients slip through the cracks. Deploy Audience OS today and experience what genuine, organic inbound authority feels like.
-          </p>
+          <WhisperText
+            text="Draft thoughtful comments on LinkedIn and save valuable articles across the web. You review everything before it goes anywhere."
+            className="text-blue-100 text-sm sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10"
+          />
 
           {/* Dual Pill Action CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-10">
@@ -45,7 +47,7 @@ export function FinalCtaSection({ onOpenDemo }: { onOpenDemo?: () => void }) {
               href="/today"
               className="w-full sm:w-auto px-9 py-4 rounded-full text-sm font-extrabold bg-[#FFF480] hover:bg-[#fffa9e] text-[#001AD3] transition-all flex items-center justify-center gap-2 shadow-lg hover:scale-105 cursor-pointer"
             >
-              <span>Start 7-Day Free Trial</span>
+              <span>Get Mastreach Assistant</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
@@ -68,11 +70,11 @@ export function FinalCtaSection({ onOpenDemo }: { onOpenDemo?: () => void }) {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#21ABE1]" />
-              <span>Dedicated Residential Cloud IP</span>
+              <span>Grounded in your knowledge base</span>
             </div>
             <div className="flex items-center gap-2">
               <Lock className="w-4 h-4 text-[#FECEBF]" />
-              <span>No Credit Card Required</span>
+              <span>You stay in control</span>
             </div>
           </div>
         </div>

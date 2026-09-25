@@ -36,7 +36,7 @@ export function FunnelStickyScroll() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-stone-900 tracking-tight leading-tight mb-4">
-            How Audience OS Converts Cold Attention into{" "}
+            How Mastreach Turns Reading into{" "}
             <span className="italic text-[#c85a3b]">
               High-Ticket Advisory Retainers.
             </span>

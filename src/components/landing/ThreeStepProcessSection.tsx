@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { THREE_STEPS } from "@/lib/landingData";
+import { WhisperText } from "./WhisperText";
 
 export const ThreeStepProcessSection: React.FC = () => {
   return (
@@ -12,15 +13,16 @@ export const ThreeStepProcessSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E0F3FB] text-[#001AD3] text-xs font-bold uppercase tracking-wider mb-4 border border-[#B0E1F4]">
-              Seamless Workflow
+              How Mastreach works
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1C1C1C] tracking-tight leading-[1.2] font-heading">
-              Get your next advisory clients in <mark className="expandi-mark">3 simple steps</mark>
+              Turn context into <mark className="expandi-mark">better writing</mark>
             </h2>
           </div>
-          <p className="text-base sm:text-lg text-[#4B5567] max-w-md leading-relaxed">
-            Contact your prospects via smart automated sequences. Launch your first campaign in 15 minutes and see discovery calls in 24 hours.
-          </p>
+          <WhisperText
+            text="Draft thoughtful LinkedIn comments in your voice, or save useful articles from anywhere on the web for later."
+            className="text-base sm:text-lg text-[#4B5567] max-w-md leading-relaxed"
+          />
         </div>
 
         {/* 3 Columns Grid */}

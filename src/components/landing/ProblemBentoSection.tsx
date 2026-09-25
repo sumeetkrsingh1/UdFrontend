@@ -2,6 +2,7 @@
 
 import React from "react";
 import { BENTO_PROBLEMS } from "@/lib/landingData";
+import { WhisperText } from "./WhisperText";
 
 export const ProblemBentoSection: React.FC = () => {
   return (
@@ -10,14 +11,15 @@ export const ProblemBentoSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFF480] text-[#1C1C1C] text-xs font-bold uppercase tracking-wider mb-4 border border-[#FFF8AD]">
-            Built for High-Growth Teams
+            Built for thoughtful readers and writers
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1C1C1C] tracking-tight leading-[1.2] font-heading">
-            Tailored inbound engines for <mark className="expandi-mark">every growth model</mark>
+            One assistant for <mark className="expandi-mark">LinkedIn and the web</mark>
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#4B5567] leading-relaxed">
-            Whether you&apos;re a solo advisory consultant or a 20-person recruiting agency, deploy automated relationship funnels that fill pipelines without cold spam.
-          </p>
+          <WhisperText
+            text="Write better replies on LinkedIn, then save the articles that matter directly into your knowledge base for future grounding."
+            className="mt-4 text-base sm:text-lg text-[#4B5567] leading-relaxed"
+          />
         </div>
 
         {/* 2x2 Alternating Multi-Pastel Bento Grid */}

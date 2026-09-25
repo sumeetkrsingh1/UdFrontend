@@ -31,12 +31,12 @@ export function PricingSection() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#1C1C1C] tracking-tight leading-tight mb-4">
             Invest in a Predictable{" "}
             <mark className="bg-[#FFF480] text-[#001AD3] px-2 py-0.5 rounded-md inline-block">
-              Revenue Engine.
+              Knowledge Assistant.
             </mark>
           </h2>
 
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed mb-8">
-            One signed $5,000 / ₹4L advisory retainer pays for years of Audience OS. Select the plan that fits your growth velocity.
+            Choose the plan that fits how often you write and save. Every plan keeps you in control of what gets inserted or saved.
           </p>
 
           {/* Billing Cycle Switcher */}

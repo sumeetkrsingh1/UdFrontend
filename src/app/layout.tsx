@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Audience OS - LinkedIn Growth System",
+  title: "Mastreach Assistant - Write with your knowledge",
   description:
-    "Next-generation LinkedIn Growth and Audience System for Coaches & Creators. Automated borrowed reach, intelligent AI drafting, and CRM.",
+    "Write thoughtful LinkedIn comments and save valuable articles across the web with Mastreach Assistant.",
 };
 
 export default function RootLayout({

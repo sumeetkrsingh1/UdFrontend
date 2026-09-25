@@ -4,6 +4,7 @@ import React from "react";
 import { Check, X, Minus, Sparkles, Shield, Zap, Layers, ArrowRight } from "lucide-react";
 import { COMPARISON_DATA } from "@/lib/landingData";
 import { cn } from "@/lib/utils";
+import { WhisperText } from "./WhisperText";
 
 export function FeatureComparisonSection() {
   return (
@@ -26,9 +27,10 @@ export function FeatureComparisonSection() {
             </mark>
           </h2>
 
-          <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-            See how Audience OS delivers 4x higher connection rates and predictable $5k–$20k retainers while keeping your LinkedIn profile 100% safe.
-          </p>
+          <WhisperText
+            text="See how Mastreach helps you write with context while keeping every final action in your hands."
+            className="text-stone-600 text-sm sm:text-base leading-relaxed"
+          />
         </div>
 
         {/* Comparison Matrix Table */}
@@ -40,12 +42,12 @@ export function FeatureComparisonSection() {
                 Core Capabilities
               </div>
 
-              {/* Audience OS Column Header (Highlighted) */}
+              {/* Mastreach Column Header (Highlighted) */}
               <div className="col-span-3 p-5 sm:p-6 bg-[#001AD3] text-white flex flex-col items-center justify-center text-center relative shadow-sm">
                 <span className="text-[10px] uppercase font-extrabold tracking-wider px-2 py-0.5 rounded-full bg-[#FFF480] text-[#001AD3] mb-1">
                   OUR SOLUTION
                 </span>
-                <span className="text-base font-black tracking-tight">Audience OS</span>
+                <span className="text-base font-black tracking-tight">Mastreach</span>
                 <span className="text-[11px] text-blue-100 font-normal">Human-Centric Inbound</span>
               </div>
 
@@ -79,7 +81,7 @@ export function FeatureComparisonSection() {
                     </span>
                   </div>
 
-                  {/* Audience OS Cell (Highlighted) */}
+                  {/* Mastreach Cell (Highlighted) */}
                   <div className="col-span-3 p-5 sm:p-6 bg-blue-50/50 flex items-start gap-2.5 border-x border-[#CCD5DF]/60">
                     <div className="w-5 h-5 rounded-full bg-[#001AD3] text-white flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check className="w-3 h-3 stroke-[3]" />
