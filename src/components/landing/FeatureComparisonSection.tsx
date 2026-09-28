@@ -74,7 +74,7 @@ const comparisonRows = [
 export function FeatureComparisonSection() {
   return (
     <section id="comparison" className="relative py-24 md:py-32 bg-[#F9F9FB] border-t border-[#E5E9EE]">
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-gradient-to-tr from-[#E0F3FB]/70 via-[#FFF480]/30 to-[#D2C5FA]/40 rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[min(700px,calc(100vw-2rem))] h-[400px] bg-gradient-to-tr from-[#E0F3FB]/70 via-[#FFF480]/30 to-[#D2C5FA]/40 rounded-full blur-[120px] pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
@@ -93,8 +93,17 @@ export function FeatureComparisonSection() {
           />
         </div>
 
-        <div className="overflow-x-auto pb-4">
-          <div className="min-w-[760px] bg-white rounded-3xl border border-[#CCD5DF] shadow-md overflow-hidden">
+        <div className="mb-4 lg:hidden">
+          <span className="text-xs font-extrabold uppercase tracking-wider text-[#001AD3]">
+            Core Capabilities
+          </span>
+          <h3 className="mt-1 text-xl font-black tracking-tight text-stone-900">
+            How Mastreach compares
+          </h3>
+        </div>
+
+        <div className="pb-4">
+          <div className="hidden w-full min-w-[760px] bg-white rounded-3xl border border-[#CCD5DF] shadow-md overflow-hidden lg:block">
             <div className="grid grid-cols-12 bg-white border-b border-[#CCD5DF] text-xs font-bold text-stone-900">
               <div className="col-span-4 p-5 sm:p-6 flex items-center text-sm font-black text-stone-900">
                 Core Capabilities
@@ -176,6 +185,57 @@ export function FeatureComparisonSection() {
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
             </div>
+          </div>
+
+          <div className="space-y-4 lg:hidden">
+            {comparisonRows.map((row) => (
+              <article
+                key={row.feature}
+                className="min-w-0 rounded-2xl border border-[#CCD5DF] bg-white p-4 shadow-sm sm:p-5"
+              >
+                <h4 className="mb-4 border-b border-[#E5E9EE] pb-3 text-sm font-extrabold uppercase tracking-wide text-stone-900">
+                  {row.feature}
+                </h4>
+
+                <div className="space-y-4">
+                  <div>
+                    <div className="mb-1.5 text-xs font-bold text-stone-800">Mastreach</div>
+                    <div className="flex min-w-0 items-start gap-2.5">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#001AD3] text-white">
+                        <Check className="h-3 w-3 stroke-[3]" />
+                      </span>
+                      <p className="min-w-0 flex-1 break-words text-xs font-semibold leading-relaxed text-stone-900">
+                        {row.mastreach}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="mb-1.5 text-xs font-bold text-stone-800">AI Writing Tools</div>
+                    <div className="flex min-w-0 items-start gap-2.5">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-100 text-red-600">
+                        <X className="h-2.5 w-2.5 stroke-[3]" />
+                      </span>
+                      <p className="min-w-0 flex-1 break-words text-xs leading-relaxed text-stone-600">
+                        {row.generic}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="mb-1.5 text-xs font-bold text-stone-800">Tabs, Notes &amp; Spreadsheets</div>
+                    <div className="flex min-w-0 items-start gap-2.5">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
+                        <Minus className="h-2.5 w-2.5 stroke-[3]" />
+                      </span>
+                      <p className="min-w-0 flex-1 break-words text-xs leading-relaxed text-stone-600">
+                        {row.manual}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>

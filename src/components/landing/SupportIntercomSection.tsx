@@ -5,9 +5,9 @@ import { MessageSquare, Search, Sparkles, FileText, BarChart3, ArrowRight } from
 
 export function SupportIntercomSection() {
   return (
-    <section className="relative py-20 md:py-28 bg-[#FFFFFF]">
+    <section className="relative py-12 sm:py-20 md:py-28 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-3xl bg-[#001AD3] p-8 sm:p-12 lg:p-16 text-white overflow-hidden shadow-2xl">
+        <div className="relative rounded-2xl sm:rounded-3xl bg-[#001AD3] p-5 sm:p-12 lg:p-16 text-white overflow-hidden shadow-2xl">
           <div className="absolute top-6 right-8 text-[#FFF480] opacity-80 animate-pulse text-2xl select-none pointer-events-none">
             ✦
           </div>
@@ -18,24 +18,24 @@ export function SupportIntercomSection() {
             ✦
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="relative z-10 grid min-w-0 grid-cols-1 items-center gap-8 md:gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7 flex flex-col items-start text-left">
-              <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#FFF480] text-xs font-bold mb-6">
+              <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#FFF480] text-[10px] sm:text-xs font-bold mb-4 sm:mb-6">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>BUILT TO HELP YOU GET MORE FROM LINKEDIN</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-[1.15] mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-[1.15] mb-3 sm:mb-4">
                 Everything you need to work smarter on LinkedIn.
               </h2>
 
-              <p className="text-blue-100 text-sm sm:text-base leading-relaxed mb-8 max-w-xl">
+              <p className="text-blue-100 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 max-w-xl">
                 Mastreach brings your LinkedIn activity, thoughtful responses, saved knowledge, content creation, scheduling, and engagement insights together in one connected system.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-8">
-                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white/10 border border-white/10">
-                  <div className="w-8 h-8 rounded-xl bg-[#21ABE1] text-white flex items-center justify-center flex-shrink-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full mb-6 sm:mb-8">
+                <div className="flex items-start gap-3 p-3 sm:p-3.5 rounded-2xl bg-white/10 border border-white/10">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-[#21ABE1] text-white flex items-center justify-center flex-shrink-0">
                     <Search className="w-4 h-4" />
                   </div>
                   <div>
@@ -44,8 +44,8 @@ export function SupportIntercomSection() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white/10 border border-white/10">
-                  <div className="w-8 h-8 rounded-xl bg-[#FFF480] text-[#001AD3] flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-3 p-3 sm:p-3.5 rounded-2xl bg-white/10 border border-white/10">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-[#FFF480] text-[#001AD3] flex items-center justify-center flex-shrink-0">
                     <MessageSquare className="w-4 h-4" />
                   </div>
                   <div>
@@ -54,8 +54,8 @@ export function SupportIntercomSection() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white/10 border border-white/10">
-                  <div className="w-8 h-8 rounded-xl bg-[#D2C5FA] text-[#001AD3] flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-3 p-3 sm:p-3.5 rounded-2xl bg-white/10 border border-white/10">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-[#D2C5FA] text-[#001AD3] flex items-center justify-center flex-shrink-0">
                     <FileText className="w-4 h-4" />
                   </div>
                   <div>
@@ -64,8 +64,8 @@ export function SupportIntercomSection() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-white/10 border border-white/10">
-                  <div className="w-8 h-8 rounded-xl bg-[#FECEBF] text-[#001AD3] flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-3 p-3 sm:p-3.5 rounded-2xl bg-white/10 border border-white/10">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-[#FECEBF] text-[#001AD3] flex items-center justify-center flex-shrink-0">
                     <BarChart3 className="w-4 h-4" />
                   </div>
                   <div>
@@ -78,7 +78,7 @@ export function SupportIntercomSection() {
               <div className="flex flex-wrap items-center gap-4">
                 <a
                   href="/today"
-                  className="px-8 py-4 rounded-full bg-[#FFF480] hover:bg-[#fffa9e] text-[#001AD3] text-sm font-extrabold transition-all shadow-md flex items-center gap-2 cursor-pointer"
+                  className="px-6 py-3 sm:px-8 sm:py-4 rounded-full bg-[#FFF480] hover:bg-[#fffa9e] text-[#001AD3] text-sm font-extrabold transition-all shadow-md flex items-center gap-2 cursor-pointer"
                 >
                   <span>Explore Mastreach</span>
                   <ArrowRight className="w-4 h-4" />
@@ -87,7 +87,7 @@ export function SupportIntercomSection() {
             </div>
 
             <div className="lg:col-span-5 flex justify-center">
-              <div className="w-full max-w-sm bg-white rounded-3xl p-6 text-stone-900 shadow-2xl border border-white/20">
+              <div className="w-full max-w-sm bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 text-stone-900 shadow-2xl border border-white/20">
                 <div className="flex items-center justify-between pb-4 border-b border-stone-100 mb-4">
                   <div className="flex items-center gap-3">
                     <div className="relative">
@@ -106,7 +106,7 @@ export function SupportIntercomSection() {
                   </span>
                 </div>
 
-                <div className="space-y-3 text-xs mb-4">
+                <div className="space-y-2.5 sm:space-y-3 text-xs mb-4">
                   <div className="bg-[#E0F3FB] text-[#001AD3] p-3 rounded-2xl rounded-tl-xs max-w-[88%]">
                     <p className="font-semibold text-[11px]">
                       I found a LinkedIn post with a strong discussion around building products with small teams.

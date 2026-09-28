@@ -76,9 +76,9 @@ export default function HeroWithPixelBackground({
       </div>
 
       <div className="relative flex min-h-screen flex-col">
-        <div className="flex flex-1 flex-col items-center justify-center px-6 py-16 text-center">
+        <div className="flex flex-1 flex-col items-center justify-center px-4 py-12 text-center sm:px-6 sm:py-16">
           <motion.div
-            initial={{ opacity: 0, y: -16 }}
+            initial={isReducedMotion ? false : { opacity: 0, y: -16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="mb-8 flex items-center gap-2"
@@ -87,21 +87,21 @@ export default function HeroWithPixelBackground({
               <React.Fragment key={label}>
                 {index > 0 && (
                   <motion.span
-                    initial={{ scaleX: 0, opacity: 0 }}
+                    initial={isReducedMotion ? false : { scaleX: 0, opacity: 0 }}
                     animate={{ scaleX: 1, opacity: 1 }}
                     transition={{ delay: 0.45 + index * 0.12, duration: 0.4 }}
                     className="h-px w-8 origin-left bg-[#CCD5DF] dark:bg-zinc-700"
                   />
                 )}
                 <motion.span
-                  initial={{ opacity: 0, y: 6 }}
+                  initial={isReducedMotion ? false : { opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     delay: 0.3 + index * 0.12,
                     duration: 0.45,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#728095] dark:text-zinc-500"
+                  className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#728095] dark:text-zinc-500 sm:tracking-[0.25em]"
                 >
                   {label}
                 </motion.span>
@@ -109,35 +109,35 @@ export default function HeroWithPixelBackground({
             ))}
           </motion.div>
 
-          <div className="flex max-w-6xl flex-col items-center gap-1">
+          <div className="flex w-full max-w-6xl min-w-0 flex-col items-center gap-1">
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={isReducedMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.6,
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="font-heading text-center text-4xl font-black leading-none tracking-tight text-[#1C1C1C] dark:text-white sm:text-6xl md:text-7xl lg:text-8xl"
+              className="max-w-full font-heading text-center text-[clamp(2.125rem,9.5vw,3.75rem)] font-black leading-none tracking-tight text-[#1C1C1C] dark:text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
               Turn LinkedIn
             </motion.h1>
 
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={isReducedMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.6,
                 delay: 0.32,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="font-heading text-center text-4xl font-black leading-none tracking-tight text-[#1C1C1C] dark:text-white sm:text-6xl md:text-7xl lg:text-8xl"
+              className="max-w-full font-heading text-center text-[clamp(2.125rem,9.5vw,3.75rem)] font-black leading-none tracking-tight text-[#1C1C1C] dark:text-white sm:text-6xl md:text-7xl lg:text-8xl"
             >
               activity into
             </motion.h1>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={isReducedMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.6,
@@ -148,13 +148,13 @@ export default function HeroWithPixelBackground({
             >
               <Timeline
                 rotation={-1.2}
-                initialLeft={10}
+                initialLeft={0}
                 minWidth={56}
-                containerClassName="relative w-fit max-w-[calc(100vw-5rem)] justify-center overflow-hidden bg-white py-3 dark:bg-[#0a0a0a]"
+                containerClassName="relative w-fit max-w-full justify-center bg-white py-3 dark:bg-[#0a0a0a]"
                 handleClassName="border-[#FFF480] bg-white dark:bg-[#0a0a0a]"
                 handleIndicatorClassName="bg-[#FFF480]"
               >
-                <TimelineText className="relative flex min-h-[1.1em] items-center justify-center px-2 text-4xl font-black leading-none tracking-tight text-[#001AD3] dark:text-yellow-400 sm:text-6xl md:text-7xl lg:text-8xl">
+                <TimelineText className="relative flex min-h-[1.1em] max-w-full items-center justify-center px-2 text-[clamp(1.75rem,8vw,3.75rem)] font-black leading-none tracking-tight text-[#001AD3] dark:text-yellow-400 sm:text-6xl md:text-7xl lg:text-8xl">
                   <AnimatePresence initial={false} mode={isReducedMotion ? "sync" : "popLayout"}>
                     <motion.span
                       key={TIMELINE_PHRASES[timelineIndex]}
@@ -167,7 +167,7 @@ export default function HeroWithPixelBackground({
                         ease: [0.22, 1, 0.36, 1],
                         layout: { duration: 0.62, ease: [0.22, 1, 0.36, 1] },
                       }}
-                      className="block max-w-[calc(100vw-7rem)] whitespace-normal text-center"
+                      className="block max-w-full whitespace-normal break-words text-center"
                     >
                       {TIMELINE_PHRASES[timelineIndex]}
                     </motion.span>
@@ -178,7 +178,7 @@ export default function HeroWithPixelBackground({
           </div>
 
           <motion.p
-            initial={{ opacity: 0, y: 12 }}
+            initial={isReducedMotion ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
             className="mt-10 max-w-2xl text-center text-sm leading-relaxed text-[#4B5567] dark:text-zinc-400 sm:text-lg"
@@ -189,14 +189,14 @@ export default function HeroWithPixelBackground({
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
+            initial={isReducedMotion ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
-            className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
+            className="mt-10 flex w-full max-w-sm flex-col items-center justify-center gap-4 sm:max-w-none sm:flex-row"
           >
             <a
               href="/settings"
-              className="expandi-btn-primary inline-flex items-center gap-2 px-8 py-3.5 text-sm font-bold"
+              className="expandi-btn-primary inline-flex w-full items-center justify-center gap-2 px-8 py-3.5 text-sm font-bold sm:w-auto"
             >
               Get Started
               <ArrowRight className="size-4" />
@@ -204,14 +204,14 @@ export default function HeroWithPixelBackground({
             <button
               type="button"
               onClick={onOpenDemo}
-              className="expandi-btn-outline px-8 py-3 text-sm font-semibold"
+              className="expandi-btn-outline w-full justify-center px-8 py-3 text-sm font-semibold sm:w-auto"
             >
               See how it works
             </button>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 8 }}
+            initial={isReducedMotion ? false : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
             className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-medium text-[#728095] dark:text-zinc-400"

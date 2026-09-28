@@ -27,8 +27,8 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
       {/* Top Announcement Bar */}
       {!announcementClosed && (
         <div className="relative bg-gradient-to-r from-[#193149] to-[#3C75AF] text-white text-xs sm:text-sm py-2 px-4 shadow-sm">
-          <div className="max-w-7xl mx-auto flex items-center justify-between pr-8">
-            <div className="flex items-center gap-2 mx-auto text-center font-medium">
+          <div className="max-w-7xl mx-auto flex items-center justify-center pr-12 sm:pr-8">
+            <div className="mx-auto flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center font-medium">
               <span>{HERO_DATA.announcementText}</span>
               <a
                 href={HERO_DATA.announcementLinkUrl}
@@ -40,7 +40,7 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
             <button
               onClick={() => setAnnouncementClosed(true)}
               aria-label="Close Announcement Bar"
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors p-1"
+              className="absolute right-4 top-1/2 flex min-h-10 min-w-10 -translate-y-1/2 items-center justify-center text-white/70 hover:text-white transition-colors"
             >
               <svg
                 width="16"
@@ -83,7 +83,7 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
             </Link>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
               {/* Product Menu */}
               <div
                 className="relative"
@@ -92,7 +92,7 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
               >
                 <button
                   type="button"
-                  className="px-3.5 py-2 text-sm font-semibold text-[#1C1C1C] hover:text-[#001AD3] rounded-md transition-colors flex items-center gap-1"
+                  className="px-2 py-2 text-sm font-semibold text-[#1C1C1C] hover:text-[#001AD3] rounded-md transition-colors flex items-center gap-1 xl:px-3.5"
                 >
                   Product
                   <svg
@@ -249,24 +249,24 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
           </div>
 
           {/* Action CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-1 xl:gap-3">
             <Link
               href="/today"
-              className="text-sm font-bold text-[#1C1C1C] hover:text-[#001AD3] px-3 py-2 transition-colors"
+              className="text-sm font-bold text-[#1C1C1C] hover:text-[#001AD3] px-1.5 py-2 transition-colors xl:px-3"
             >
               Log in
             </Link>
 
             <button
               onClick={onOpenDemo}
-              className="expandi-btn-outline text-xs sm:text-sm py-2 px-4"
+              className="expandi-btn-outline text-xs sm:text-sm py-2 px-2 xl:px-4"
             >
               See How It Works
             </button>
 
             <Link
               href="/settings"
-              className="expandi-btn-primary text-xs sm:text-sm py-2 px-5"
+              className="expandi-btn-primary text-xs sm:text-sm py-2 px-2 xl:px-5"
             >
               Get Started
             </Link>
@@ -275,8 +275,9 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-[#1C1C1C] hover:bg-slate-100 transition-colors"
+            className="lg:hidden flex min-h-11 min-w-11 items-center justify-center rounded-lg p-2 text-[#1C1C1C] hover:bg-slate-100 transition-colors"
             aria-label="Toggle Navigation Menu"
+            aria-expanded={mobileMenuOpen}
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {mobileMenuOpen ? (
@@ -290,39 +291,39 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
 
         {/* Mobile Dropdown Sheet */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
+          <div className="lg:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-2 shadow-lg">
             <Link
               href="#bento"
               onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-sm font-bold text-[#1C1C1C]"
+              className="block min-h-11 py-3 text-sm font-bold text-[#1C1C1C]"
             >
               Solutions
             </Link>
             <Link
               href="#three-steps"
               onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-sm font-bold text-[#1C1C1C]"
+              className="block min-h-11 py-3 text-sm font-bold text-[#1C1C1C]"
             >
               How It Works
             </Link>
             <Link
               href="#comparison"
               onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-sm font-bold text-[#1C1C1C]"
+              className="block min-h-11 py-3 text-sm font-bold text-[#1C1C1C]"
             >
               Comparison
             </Link>
             <Link
               href="#pricing"
               onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-sm font-bold text-[#1C1C1C]"
+              className="block min-h-11 py-3 text-sm font-bold text-[#1C1C1C]"
             >
               Pricing
             </Link>
             <Link
               href="#faq"
               onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-sm font-bold text-[#1C1C1C]"
+              className="block min-h-11 py-3 text-sm font-bold text-[#1C1C1C]"
             >
               FAQ
             </Link>
@@ -333,14 +334,14 @@ export const LandingNav: React.FC<LandingNavProps> = ({ onOpenDemo }) => {
                   setMobileMenuOpen(false);
                   onOpenDemo?.();
                 }}
-                className="w-full expandi-btn-outline text-sm py-2.5 text-center justify-center"
+                className="w-full min-h-11 expandi-btn-outline text-sm py-2.5 text-center justify-center"
               >
                 See How It Works
               </button>
               <Link
                 href="/settings"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full expandi-btn-primary text-sm py-2.5 text-center justify-center"
+                className="w-full min-h-11 expandi-btn-primary text-sm py-2.5 text-center justify-center"
               >
                 Get Started
               </Link>

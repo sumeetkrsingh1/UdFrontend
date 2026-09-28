@@ -56,7 +56,7 @@ export function PricingSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           {PRICING_PLANS.map((plan) => {
             const priceValue = PLAN_PRICE_BY_REGION[plan.id as keyof typeof PLAN_PRICE_BY_REGION]?.[region] ?? plan.priceMonthly;
             const isFeatured = plan.isPopular;
@@ -146,7 +146,7 @@ export function PricingSection() {
             <p className="text-sm text-stone-600 mt-2">Add extra usage when you need it. Add-ons are separate from your monthly plan allowance.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {PRICING_ADDONS.map((addon) => (
               <div key={addon.title} className="rounded-2xl border border-[#CCD5DF] bg-white p-5 shadow-sm flex flex-col justify-between gap-4">
                 <div>

@@ -38,7 +38,7 @@ export function InteractiveDemoModal({ isOpen, onClose }: InteractiveDemoModalPr
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="relative w-full max-w-2xl rounded-3xl bg-[#fffdf8] border border-stone-200 p-6 sm:p-8 shadow-2xl overflow-hidden">
+      <div className="relative w-full max-h-[calc(100dvh-2rem)] max-w-2xl overflow-y-auto rounded-3xl bg-[#fffdf8] border border-stone-200 p-4 shadow-2xl sm:p-8">
         {/* Modal Header */}
         <div className="flex items-center justify-between pb-4 border-b border-stone-200 mb-6">
           <div className="flex items-center gap-2.5">
@@ -119,7 +119,7 @@ export function InteractiveDemoModal({ isOpen, onClose }: InteractiveDemoModalPr
         </div>
 
         {/* Projected Results Dashboard */}
-        <div className="p-4 rounded-2xl bg-[#faf7f2] border border-stone-200 grid grid-cols-3 gap-3 mb-6 text-center">
+        <div className="p-4 rounded-2xl bg-[#faf7f2] border border-stone-200 grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 text-center">
           <div className="p-2.5 rounded-xl bg-white border border-stone-200">
             <span className="text-[10px] text-stone-500 font-mono block">
               Borrowed Peer Reach

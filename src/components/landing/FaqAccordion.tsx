@@ -20,10 +20,10 @@ export function FaqAccordion() {
   };
 
   return (
-    <section id="faq" className="relative py-24 md:py-32 bg-[#FFFFFF] border-t border-[#E5E9EE]">
+    <section id="faq" className="relative py-16 sm:py-24 md:py-32 bg-[#FFFFFF] border-t border-[#E5E9EE]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E0F3FB] border border-[#B0E1F4] text-[#001AD3] text-xs font-extrabold tracking-wide mb-4 shadow-xs">
             <HelpCircle className="w-3.5 h-3.5 text-[#001AD3]" />
             <span>FREQUENTLY ASKED QUESTIONS</span>
@@ -39,7 +39,7 @@ export function FaqAccordion() {
         </div>
 
         {/* Accordion List */}
-        <div className="space-y-4 mb-12">
+        <div className="space-y-3 sm:space-y-4 mb-10 sm:mb-12">
           {FAQS.map((faq) => {
             const isOpen = openId === faq.id;
             return (
@@ -54,31 +54,31 @@ export function FaqAccordion() {
               >
                 <button
                   onClick={() => toggle(faq.id)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left cursor-pointer focus:outline-none"
+                  className="flex w-full items-start justify-between gap-3 px-4 py-4 text-left cursor-pointer focus:outline-none sm:px-6 sm:py-5"
                 >
-                  <div className="flex items-center gap-3 pr-4">
+                  <div className="flex min-w-0 flex-1 flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
                     <span
                       className={cn(
-                        "text-[10px] font-mono font-bold px-2 py-0.5 rounded-full border whitespace-nowrap",
+                        "shrink-0 text-[10px] font-mono font-bold px-2 py-0.5 rounded-full border whitespace-nowrap",
                         getCategoryBadgeClass(faq.category)
                       )}
                     >
                       {faq.category}
                     </span>
-                    <span className="text-sm sm:text-base font-bold text-[#1C1C1C]">
+                    <span className="min-w-0 w-full flex-1 text-sm sm:w-auto sm:text-base font-bold leading-snug text-[#1C1C1C]">
                       {faq.question}
                     </span>
                   </div>
                   <ChevronDown
                     className={cn(
-                      "w-5 h-5 text-stone-400 transition-transform duration-300 flex-shrink-0",
+                      "mt-0.5 w-5 h-5 text-stone-400 transition-transform duration-300 flex-shrink-0",
                       isOpen && "rotate-180 text-[#001AD3]"
                     )}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-1 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed">
+                  <div className="px-4 pb-5 pt-3 sm:px-6 sm:pb-6 sm:pt-1 border-t border-stone-100 text-xs sm:text-sm text-stone-600 leading-relaxed">
                     {faq.answer}
                   </div>
                 )}
@@ -88,7 +88,7 @@ export function FaqAccordion() {
         </div>
 
         {/* Bottom Help Card */}
-        <div className="rounded-2xl bg-[#E0F3FB] border border-[#B0E1F4] p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="rounded-2xl bg-[#E0F3FB] border border-[#B0E1F4] p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-[#001AD3] text-white flex items-center justify-center flex-shrink-0">
               <MessageSquare className="w-5 h-5" />
@@ -100,7 +100,7 @@ export function FaqAccordion() {
           </div>
           <a
             href="/today"
-            className="px-6 py-2.5 rounded-full bg-[#001AD3] hover:bg-[#0015A8] text-white text-xs font-bold transition-all shadow-xs flex-shrink-0 cursor-pointer"
+            className="px-6 py-2.5 rounded-full bg-[#001AD3] hover:bg-[#0015A8] text-white text-xs font-bold transition-all shadow-xs flex-shrink-0 cursor-pointer self-stretch text-center sm:self-auto"
           >
             Explore Mastreach →
           </a>

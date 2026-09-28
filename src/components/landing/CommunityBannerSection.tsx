@@ -15,7 +15,7 @@ export function CommunityBannerSection() {
             ★
           </div>
 
-          <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
+          <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center text-center">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-white text-[#001AD3] text-xs font-extrabold tracking-wide mb-6 shadow-xs">
               <Users className="w-3.5 h-3.5 text-[#001AD3]" />
               <span>YOUR LINKEDIN, FINALLY CONNECTED</span>

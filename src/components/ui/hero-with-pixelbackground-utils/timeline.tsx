@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 type TimelineProps = {
@@ -23,9 +23,11 @@ export function Timeline({
   handleClassName,
   handleIndicatorClassName,
 }: TimelineProps) {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <div
-      className="relative inline-flex"
+      className="relative inline-flex max-w-full"
       style={{
         transform: `rotate(${rotation}deg)`,
         marginLeft: `${initialLeft}px`,
@@ -34,7 +36,12 @@ export function Timeline({
     >
       <motion.div
         layout
-        transition={{ layout: { duration: 0.62, ease: [0.22, 1, 0.36, 1] } }}
+        transition={{
+          layout: {
+            duration: prefersReducedMotion ? 0 : 0.62,
+            ease: [0.22, 1, 0.36, 1],
+          },
+        }}
         className={cn(
           "relative inline-flex items-center rounded-[1.15rem] border-[3px] border-yellow-400 px-3 py-1",
           containerClassName
@@ -42,7 +49,7 @@ export function Timeline({
       >
       <span
         className={cn(
-          "absolute -left-6 top-1/2 flex h-[78%] w-11 -translate-y-1/2 items-center justify-center rounded-[1.15rem] border-[3px] border-yellow-400",
+          "absolute -left-3 top-1/2 flex h-[78%] w-8 -translate-y-1/2 items-center justify-center rounded-[1.15rem] border-[3px] border-yellow-400 sm:-left-6 sm:w-11",
           handleClassName
         )}
       >
@@ -55,7 +62,7 @@ export function Timeline({
       </span>
       <span
         className={cn(
-          "absolute -right-6 top-1/2 flex h-[78%] w-11 -translate-y-1/2 items-center justify-center rounded-[1.15rem] border-[3px] border-yellow-400",
+          "absolute -right-3 top-1/2 flex h-[78%] w-8 -translate-y-1/2 items-center justify-center rounded-[1.15rem] border-[3px] border-yellow-400 sm:-right-6 sm:w-11",
           handleClassName
         )}
       >

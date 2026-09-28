@@ -27,7 +27,7 @@ export default function LandingPage() {
       <LandingNav onOpenDemo={() => setDemoOpen(true)} />
 
       {/* Main Content Sections in Expandi Sequence */}
-      <main className="flex flex-col w-full overflow-hidden">
+      <main className="flex min-w-0 w-full flex-col">
         {/* 2. Hero Section (High Impact + Live Browser Cockpit Mockup) */}
         <HeroSection onOpenDemo={() => setDemoOpen(true)} />
 
